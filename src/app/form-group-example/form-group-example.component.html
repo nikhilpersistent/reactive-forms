@@ -1,0 +1,10 @@
+<h2>{{formTitle}}</h2>
+<form [formGroup]="registerUser" (ngSubmit)="submitRegisterUser()">
+  <input formControlName="username" type="text" name="" id="" ><br>
+  <input formControlName="lastname" type="text" name="" id="" ><br>
+  <input formControlName="password" type="password" name="" id=""><br>
+  <input formControlName="confirmpassword" type="password" name="" id=""><br><br>
+  <button type="submit">Submit</button>
+</form>
+<br>
+<button (click)="getRegisterUser()">Get Data </button>
