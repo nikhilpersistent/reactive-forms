@@ -21,7 +21,7 @@ export class FormBuilderExampleComponent implements OnInit, FormBuilderI {
   }
 
 formGroupExample = this._formBuilder.group({
-  city:['Pune',[Validators.required]],
+  city:['',[Validators.required,Validators.minLength(3)]],
   contactNo:[],
   status:[]
 })
